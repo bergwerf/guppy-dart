@@ -1,3 +1,3 @@
 Guppy equation editor for Dart
 ==============================
-See: http://daniel3735928559.github.io/guppy/.
+See: https://github.com/daniel3735928559/guppy.

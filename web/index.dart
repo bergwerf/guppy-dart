@@ -7,7 +7,7 @@ import 'dart:html';
 import 'package:guppy_dart/guppy.dart';
 
 void main() {
-  guppyInit('packages/guppy_dart/guppy/src/transform.xsl',
-      'packages/guppy_dart/guppy/src/symbols.json');
+  guppyInit('packages/guppy_dart/deps/transform.xsl',
+      'packages/guppy_dart/deps/symbols.json');
   new Guppy(querySelector('#guppy'));
 }
