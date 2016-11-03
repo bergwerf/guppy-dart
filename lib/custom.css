@@ -1,0 +1,37 @@
+/*
+ * Copyright (c) 2016, Herman Bergwerf. All rights reserved.
+ * Use of this source code is governed by a MIT-style license
+ * that can be found in the LICENSE file.
+ */
+
+/*
+Some additional CSS rules to make Guppy look a little nicer.
+*/
+
+.cursor {
+  margin-right: 0 !important;
+  border-width: 2px !important;
+  transform: scaleY(1.4);
+}
+
+.mathbox {
+  /* Overrides */
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 2px solid transparent !important;
+  outline: none !important;
+
+  /* Extra styles */
+  display: inline-block;
+  padding: 1em;
+}
+
+.mathbox:focus {
+  border: 2px solid #ccc !important;
+  margin: 0;
+}
+
+.mathbox:not(:focus) .cursor {
+  border-width: 0 !important;
+  opacity: 0;
+}
