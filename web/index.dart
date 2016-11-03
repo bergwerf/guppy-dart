@@ -4,7 +4,7 @@
 
 import 'dart:html';
 
-import 'package:guppy_dart/guppy.dart';
+import 'package:guppy_dart/guppy_dart.dart';
 
 void main() {
   guppyInit('packages/guppy_dart/deps/transform.xsl',
