@@ -9,29 +9,19 @@ Some additional CSS rules to make Guppy look a little nicer.
 */
 
 .cursor {
-  margin-right: 0 !important;
+  margin-right: -2px !important;
   border-width: 2px !important;
   transform: scaleY(1.4);
 }
 
 .mathbox {
-  /* Overrides */
+  /* Undo Guppy styles */
   background: transparent !important;
   box-shadow: none !important;
-  border: 2px solid transparent !important;
   outline: none !important;
-
-  /* Extra styles */
-  display: inline-block;
-  padding: 1em;
-}
-
-.mathbox:focus {
-  border: 2px solid #ccc !important;
-  margin: 0;
 }
 
 .mathbox:not(:focus) .cursor {
-  border-width: 0 !important;
+  /* Hide cursor when mathbox is not focussed */
   opacity: 0;
 }
