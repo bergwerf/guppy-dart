@@ -1,5 +1,5 @@
 name:         guppy_dart
-version:      0.0.2
+version:      0.0.3
 author:       Herman Bergwerf <hermanbergwerf@gmail.com>
 description:  Dart wrapper for the Guppy equation editor.
 homepage:     https://github.com/eqdb/guppy-dart
