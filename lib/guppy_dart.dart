@@ -15,7 +15,7 @@ external void guppyInit(String xslPath, String symbolsPath);
 @JS('Guppy.symb_raw')
 external void guppyAddSymbol(String name, String latex, String text);
 
-@JS('_guppyUnsetSymbol')
+@JS('_guppyRemoveSymbol')
 external void guppyRemoveSymbol(String name);
 
 @JS()
