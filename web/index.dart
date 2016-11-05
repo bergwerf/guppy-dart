@@ -9,5 +9,13 @@ import 'package:guppy_dart/guppy_dart.dart';
 void main() {
   guppyInit('packages/guppy_dart/deps/transform.xsl',
       'packages/guppy_dart/deps/symbols.json');
-  new Guppy(querySelector('#guppy'));
+  final editor = new Guppy(querySelector('#guppy'));
+  guppyAddSymbol('theta', '\\theta', 'theta');
+  guppyAddSymbol('ihat', '\\hat{i}', 'ihat');
+  guppyAddSymbol('phi', '\\phi', 'phi');
+  guppyRemoveSymbol('phi');
+
+  querySelector('#alert').onClick.listen((_) {
+    print(editor.get_content('latex'));
+  });
 }

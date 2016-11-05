@@ -12,10 +12,20 @@ import 'dart:html';
 @JS('Guppy.guppy_init')
 external void guppyInit(String xslPath, String symbolsPath);
 
+@JS('Guppy.symb_raw')
+external void guppyAddSymbol(String name, String latex, String text);
+
+@JS('_guppyUnsetSymbol')
+external void guppyRemoveSymbol(String name);
+
 @JS()
 class Guppy {
   external Guppy(DivElement container,
       [Map<String, dynamic> properties = const {}]);
+
+  external String get_content(String type);
+  external void set_content(String xmlData);
+
   external void activate();
   external void deactivate();
 }
